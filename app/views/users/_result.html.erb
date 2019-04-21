@@ -1,7 +1,11 @@
+<div class="results-block">
+  <%= bootstrap_flash %>
+</div>
 <% if @stock %>
   <div class="card well results-block">
     <strong>Symbol</strong> <%= @stock.ticker %>
-
+    &nbsp; &nbsp;
+    <strong>Company</strong> <%= @stock.name %>
     &nbsp; &nbsp;
     <strong>Last Price</strong> <%= @stock.last_price %>
   </div>
