@@ -1,0 +1,8 @@
+<% if @stock %>
+  <div class="card well results-block">
+    <strong>Symbol</strong> <%= @stock.ticker %>
+
+    &nbsp; &nbsp;
+    <strong>Last Price</strong> <%= @stock.last_price %>
+  </div>
+<% end %>
